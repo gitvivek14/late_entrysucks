@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useLocation, Navigate } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 
+
 interface FormData {
   name: string;
   rollNumber: string;
@@ -105,17 +106,17 @@ const ConfirmationScreen = () => {
     <div className="text-xs text-gray-600">Full Stack Developer</div>
 
     {/* Social Icons */}
-    <div className="flex justify-center gap-3 mt-2">
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-        <img src="src\icons\github-svgrepo-com.svg" alt="GitHub" className="w-5 h-5" />
-      </a>
-      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
-        <img src="src\icons\linkedin-svgrepo-com.svg" alt="LinkedIn" className="w-5 h-5" />
-      </a>
-      <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
-        <img src="src\icons\domain-www-svgrepo-com.svg" alt="Website" className="w-5 h-5" />
-      </a>
-    </div>
+  <div className="flex justify-center gap-3 mt-2">
+  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+    <img src="/icons/github-svgrepo-com.svg" alt="GitHub" className="w-5 h-5" />
+  </a>
+  <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+    <img src="/icons/linkedin-svgrepo-com.svg" alt="LinkedIn" className="w-5 h-5" />
+  </a>
+  <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
+    <img src="/icons/domain-www-svgrepo-com.svg" alt="Website" className="w-5 h-5" />
+  </a>
+</div>
   </div>
 
   {/* Profile 2 */}
@@ -128,17 +129,17 @@ const ConfirmationScreen = () => {
     <div className="text-sm font-semibold text-gray-800">Jaskaran Singh</div>
     <div className="text-xs text-gray-600">Frontend Developer</div>
 
-    <div className="flex justify-center gap-3 mt-2">
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-        <img src="src\icons\github-svgrepo-com.svg" alt="GitHub" className="w-5 h-5" />
-      </a>
-      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
-        <img src="src\icons\linkedin-svgrepo-com.svg" alt="LinkedIn" className="w-5 h-5" />
-      </a>
-      <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
-        <img src="src\icons\domain-www-svgrepo-com.svg" alt="Website" className="w-5 h-5" />
-      </a>
-    </div>
+  <div className="flex justify-center gap-3 mt-2">
+  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+    <img src="/icons/github-svgrepo-com.svg" alt="GitHub" className="w-5 h-5" />
+  </a>
+  <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+    <img src="/icons/linkedin-svgrepo-com.svg" alt="LinkedIn" className="w-5 h-5" />
+  </a>
+  <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
+    <img src="/icons/domain-www-svgrepo-com.svg" alt="Website" className="w-5 h-5" />
+  </a>
+</div>
   </div>
 </div>
 
