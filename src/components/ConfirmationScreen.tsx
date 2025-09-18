@@ -13,14 +13,14 @@ const ConfirmationScreen = () => {
   const formData = location.state as FormData;
   const [currentTime, setCurrentTime] = useState(new Date());
 
-  useEffect(() => {
-    // Update time every second
-    const timer = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000);
+  // useEffect(() => {
+  //   // Update time every second
+  //   const timer = setInterval(() => {
+  //     setCurrentTime(new Date());
+  //   }, 1000);
 
-    return () => clearInterval(timer);
-  }, []);
+  //   return () => clearInterval(timer);
+  // }, []);
 
   // Redirect if no form data
   if (!formData) {
@@ -62,10 +62,7 @@ const ConfirmationScreen = () => {
                 </div>
                 <div className="text-base">
                   <span className="font-semibold">Student: </span>
-                  <span>{formData.name}</span>
-                </div>
-                <div className="text-sm opacity-90">
-                  ({formData.rollNumber})
+                  <span>{formData.name} {'('+formData.rollNumber+')'}</span>
                 </div>
               </div>
             </div>
@@ -92,33 +89,59 @@ const ConfirmationScreen = () => {
               UNDER SUPERVISION OF ANANTAN HALL MANAGEMENT TEAM
             </div>
             
-            {/* Developer Profiles */}
-            <div className="flex justify-center gap-12">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-entry rounded-full mx-auto mb-3 flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                  RG
-                </div>
-                <div className="text-sm font-semibold text-gray-800">Ratn Govindam</div>
-                <div className="text-xs text-gray-600">Full Stack Developer</div>
-                <div className="flex justify-center gap-1 mt-2">
-                  <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
-                  <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
-                  <div className="w-1.5 h-1.5 bg-purple-500 rounded-full"></div>
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-entry rounded-full mx-auto mb-3 flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                  JS
-                </div>
-                <div className="text-sm font-semibold text-gray-800">Jaskaran Singh</div>
-                <div className="text-xs text-gray-600">Frontend Developer</div>
-                <div className="flex justify-center gap-1 mt-2">
-                  <div className="w-1.5 h-1.5 bg-orange-500 rounded-full"></div>
-                  <div className="w-1.5 h-1.5 bg-red-500 rounded-full"></div>
-                </div>
-              </div>
-            </div>
+          {/* Developer Profiles */}
+<div className="flex justify-center gap-12">
+  {/* Profile 1 */}
+  <div className="text-center">
+    {/* Profile Image */}
+    <img
+      src="/images/ratn.png" // replace with actual path of your uploaded image
+      alt="Ratn Govindam"
+      className="w-16 h-16 rounded-full mx-auto mb-3 shadow-lg object-cover"
+    />
+
+    {/* Name & Role */}
+    <div className="text-sm font-semibold text-gray-800">Ratn Govindam</div>
+    <div className="text-xs text-gray-600">Full Stack Developer</div>
+
+    {/* Social Icons */}
+    <div className="flex justify-center gap-3 mt-2">
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <img src="src\icons\github-svgrepo-com.svg" alt="GitHub" className="w-5 h-5" />
+      </a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+        <img src="src\icons\linkedin-svgrepo-com.svg" alt="LinkedIn" className="w-5 h-5" />
+      </a>
+      <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
+        <img src="src\icons\domain-www-svgrepo-com.svg" alt="Website" className="w-5 h-5" />
+      </a>
+    </div>
+  </div>
+
+  {/* Profile 2 */}
+  <div className="text-center">
+    <img
+      src="/images/jaskaran.png"
+      alt="Jaskaran Singh"
+      className="w-16 h-16 rounded-full mx-auto mb-3 shadow-lg object-cover"
+    />
+    <div className="text-sm font-semibold text-gray-800">Jaskaran Singh</div>
+    <div className="text-xs text-gray-600">Frontend Developer</div>
+
+    <div className="flex justify-center gap-3 mt-2">
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <img src="src\icons\github-svgrepo-com.svg" alt="GitHub" className="w-5 h-5" />
+      </a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+        <img src="src\icons\linkedin-svgrepo-com.svg" alt="LinkedIn" className="w-5 h-5" />
+      </a>
+      <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
+        <img src="src\icons\domain-www-svgrepo-com.svg" alt="Website" className="w-5 h-5" />
+      </a>
+    </div>
+  </div>
+</div>
+
           </div>
         </div>
       </div>
